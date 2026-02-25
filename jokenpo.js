@@ -25,8 +25,26 @@ function jogar(){
         (document.getElementById('papel').checked == true && sorteio == 1)||
         (document.getElementById('tesoura').checked == true && sorteio == 2)){
 
-            alert("Empate!")
+            document.getElementById('placar').innerHTML= "Empate";
             
         }
+
+        else if((document.getElementById('pedra').checked == true && sorteio == 2)||
+        (document.getElementById('papel').checked == true && sorteio == 0)||
+        (document.getElementById('tesoura').checked == true && sorteio == 1)){
+
+            document.getElementById('placar').innerHTML= "Você Venceu!";
+
+        }
+
+        else{
+            document.getElementById('placar').innerHTML= "Computador Ganhou!";
+        }
+        
     }
+}
+
+function resetar(){
+    document.getElementById('pc').src="pc.png"
+    document.getElementById('pc').innerHTML= " ";
 }
