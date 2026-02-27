@@ -46,5 +46,5 @@ function jogar(){
 
 function resetar(){
     document.getElementById('pc').src="pc.png"
-    document.getElementById('pc').innerHTML= " ";
+    document.getElementById('placar').innerHTML= " ";
 }
