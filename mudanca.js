@@ -28,3 +28,4 @@ function resetar (){
     document.getElementById('pc').src="pc.png"
     document.getElementById('placar').innerHTML=" ";
 }
+
